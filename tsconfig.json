@@ -1,26 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "target": "es5",                          // Specify ECMAScript target version
+    "module": "commonjs",                     // Specify module code generation
+    "jsx": "react",                           // Specify JSX code generation
+    "strict": true,                           // Enable all strict type-checking options
+    "esModuleInterop": true,                  // Enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                     // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure that casing of filenames is consistent
+    "outDir": "./build",                      // Output directory for transpiled files
+    "declaration": false                       // Do not generate declaration files
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*"],                     // Include all files in src
+  "exclude": ["node_modules", "build"]        // Exclude node_modules and build
 }
